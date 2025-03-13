@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+:root {
+     --primary-bg:#111111;
+  --primary-color: #4CAF50;
+  --secondary-color: #00c951;
+  --text-color: #ffffff;
+  --secondary-bgcolor:#000000;
+}
+
+#root {
+  /* max-width: ; */
+  margin: 0% ;
+  padding: 0%;
+  text-align: center;
+}
+
+@keyframes scroll-left-to-right {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-1000%);
+  }
+}
+
+.scrolling-text {
+  white-space: nowrap; /* Prevent text from wrapping */
+  display: inline-block;
+  animation: scroll-left-to-right 10s linear infinite;
+}
+
+
+/* .innerContainer-skills{
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10% 90%,
+    transparent
+);
+} */
