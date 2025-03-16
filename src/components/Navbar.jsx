@@ -3,7 +3,7 @@ import { NavLink, Link} from "react-router-dom";
 import { FaHeart, FaShoppingCart, FaSearch, FaTimes } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-
+import avatar from "../assets/avatar.webp"
 const Navbar = () => {
 
   const [shownavbar, setNavbar] = useState(false);
@@ -26,21 +26,17 @@ const Navbar = () => {
     <>
 
       {/* Navbar */}
-      <nav className="w-full h-14 lg:h-24 bg-black flex justify-between items-center px-5 lg:px-10 sticky top-0 z-[10]">
+      <nav className="backdrop-blur-sm   text-gray-500 py-2 flex justify-between items-center px-5 lg:px-10 sticky top-0 z-[10]">
         {/* Left: Logo & Menu Button */}
         <div className="flex items-center gap-4">
           <GiHamburgerMenu
-            className="lg:hidden text-white text-2xl cursor-pointer"
+            className="lg:hidden text-gray-400 text-2xl cursor-pointer"
             onClick={() => setNavbar(true)}
           />
           <div className="text-start">
-                <h1 className="text-white text-xl font-semibold">KARTHIKEYAN</h1>
-                {/* <span className="text-white">MERN DEVELOPER</span> */}
+                <h1 className="text-gray-400 text-xl font-semibold">KARTHIKEYAN</h1>
           </div>
         </div>
-
-        {/* Middle: Search Bar */}
-
 
         {/* Desktop Nav Links */}
         <div className="hidden lg:flex gap-x-10">
@@ -52,7 +48,13 @@ const Navbar = () => {
 
         {/* Right: Icons & Profile */}
         <div className="flex items-center gap-5">
-          <Link to="/profile" className="text-white hidden lg:block">Profile</Link>
+          <img src={avatar} alt="avatar" className="aspect-square h-14 border-2 rounded-full border-green-500" />
+          {/* <Link to="/profile" className="text-white hidden lg:block">Profile</Link> */}
+          <div className="animated_call_to_action_btn">
+            <div>
+              
+            </div>
+          </div>
         </div>
       </nav>
 

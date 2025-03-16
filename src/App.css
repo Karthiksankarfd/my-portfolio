@@ -40,3 +40,15 @@
     transparent
 );
 } */
+
+
+.project-card{
+  transform:translateX(100px);
+  opacity:0;
+  transition:1s;
+}
+
+.project-card.show{
+  transform:translateX(0);
+  opacity:1;
+}

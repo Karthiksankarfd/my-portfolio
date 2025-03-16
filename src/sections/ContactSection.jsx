@@ -70,9 +70,9 @@ const ContactSection = () => {
   }, []);
 
   return (
-    <main className="contact_me_main_container bg-[var(--primary-bg)] py-10">
+    <main className="contact_me_main_container bg-[var(--primary-bg)] py-5">
       <section className="w-[80%] mx-auto py-5 text-white flex flex-col lg:flex-row gap-y-10  ">
-        <div className="child_left text-4xl lg:text-7xl text-start flex-1">
+        <div className="child_left text-4xl lg:text-7xl text-start flex-1 project-card ">
           <BadgeName content="CONTACT ME HERE" color="white" />
           <h1>
             {" "}
@@ -80,7 +80,7 @@ const ContactSection = () => {
             into Reality
           </h1>
         </div>
-        <div className="child_right flex-1">
+        <div className="child_right flex-1 border-green-500 pl-5 border-l-4 h-fit">
           {/* <form onSubmit={sendMessage} className="flex flex-col ">
             <div className="form_field_one  w-full text-start mb-5">
               <label
@@ -141,7 +141,7 @@ const ContactSection = () => {
               className="w-fit bg-black text-green-500  px-5 py-2 "
             />
           </form> */}
-          <ul className="border-l-4 border-green-500 px-5">
+          <ul className="project-card ">
 
             <li className="mb-5 ">
 

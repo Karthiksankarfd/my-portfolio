@@ -5,6 +5,7 @@ import BadgeName from "../components/BadgeName";
 import realestate from "../assets/mockupscreens/realestate.png"
 import ecom from "../assets/mockupscreens/ecom.png"
 import coffee from "../assets/mockupscreens/coffee.png"
+import studentconnect from "../assets/mockupscreens/studentconnect.png"
 const ProjectsSection = () => {
   const all_projects = [
     {
@@ -15,25 +16,25 @@ const ProjectsSection = () => {
       image:realestate
     },
     {
-      name: "Real Estate Website",
+      name: "E-Commerce webiste",
       description:
         "Awebsite for show casing the plots and apartments for an real estate agency",
       link: "somelink",
       image:ecom
     },
     {
-      name: "Real Estate Website",
+      name: "Coffee Shop Themed website",
       description:
         "Awebsite for show casing the plots and apartments for an real estate agency",
       link: "somelink",
       image:coffee
     },
     {
-      name: "Real Estate Website",
+      name: "student Networking Platform",
       description:
         "Awebsite for show casing the plots and apartments for an real estate agency",
-      link: "somelink",
-      image:realestate
+      link: "https://student-connect-client.vercel.app/",
+      image:studentconnect
     },
   ];
 
@@ -48,7 +49,7 @@ const ProjectsSection = () => {
     //   </div>
     // </div>
 
-    <section className=" w-full flex justify-center bg-[#111111] py-10">
+    <section className=" w-full flex justify-center bg-[#111111] py-10 overflow-hidden">
       <div className="w-[80%]  MAX-W-[1200px]  gap-y-10">
         <BadgeName content="PROJECTS" color="white"/>
         <h1 className=" text-4xl  lg:ml-0 lg:text-8xl text-start mb-5 font-thin text-white">PROJECTS</h1> 
