@@ -7,7 +7,7 @@ import Express from "../assets/Express.png"
 const SkillsSectionTwo = () => {
   return (
     <section  className="skills-section-two-parent-container  w-full py-10  bg-white   flex items-center">
-      <div className="w-[80%]  mx-auto  flex flex-col  lg:flex-row  ">
+      <div className="w-[80%]  mx-auto  flex flex-col  lg:flex-row container ">
         <div  className="left-inner-child flex-1  flex flex-col items-start project-card">
             <BadgeName content="My Skills"/>
 

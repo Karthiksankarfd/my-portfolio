@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import ProjectCards from "./components/ProjectCards";
@@ -9,9 +9,11 @@ import HeroSection from "./sections/heroSection";
 import ProjectsSection from "./sections/projectsSection";
 import SkillsSection from "./sections/SkillsSection";
 import SkillsSectionTwo from "./sections/SkillsSectionTwo";
+import Footer from "./components/Footer";
 
 function App() {
-
+ 
+  const [activeLink, setActiveLink] = useState("")
 
   useEffect(()=>{
       setTimeout(() => {
@@ -20,7 +22,9 @@ function App() {
        
         const cardObserver = new IntersectionObserver(entries => {
           console.log(entries)
-          entries.forEach(entry => {
+          entries.forEach(entry => { 
+            console.log("this section is active", activeLink)
+            setActiveLink(entry.target)
             entry.target.classList.toggle("show", entry.isIntersecting)
           })
         },{
@@ -42,15 +46,15 @@ function App() {
 
 
   return (
-    <div className="flex flex-col bg-black">
-      <Navbar/>
+    <div className="flex flex-col bg-[#111111]">
+      <Navbar activeLink ={activeLink} />
       <section  id="about" className="overflow-hidden">
         <HeroSection />
       </section >
       <section id="project" className="overflow-hidden">
         <ProjectsSection />
       </section>
-      <section  id="skills" className="overflow-hidden">
+      <section id="skills" className="overflow-hidden">
         <SkillsSectionTwo />
       </section>
       <section id="education"  className="overflow-hidden">
@@ -58,6 +62,9 @@ function App() {
       </section>
       <section id="contact" className="overflow-hidden">
         <ContactSection />
+      </section>
+      <section>
+        <Footer/>
       </section>
     </div>
   );

@@ -10,7 +10,7 @@ import Express from "../assets/Express.png";
 const HeroSection = () => {
   return (
     <>
-      <section className="hero-section md:h-dvh text-white  relative bg-[#111111] gap-5 flex flex-col md:flex-row items-center justify-center ">
+      <section className="hero-section md:h-dvh text-white  relative  bg-[#111111] gap-5 flex flex-col md:flex-row items-center justify-center ">
         {/* Name Section */}
         <main className="mx-auto w-[80%] py-10 flex flex-col lg:flex-row relative">
           <motion.div
@@ -20,9 +20,12 @@ const HeroSection = () => {
             className="text-center md:text-left flex-1 w-full"
           >
             <div className="flex items-center">
-              <h1 className="text-2xl md:text-7xl font-thin project-card">
+              {/* <div className=" text-2xl md:text-7xl font-thin project-card  bg-gradient-to-tr from-purple-900  to-blue-500 bg-clip-text"> */}
+              <h1 className=" text-2xl md:text-7xl font-thin project-card  bg-gradient-to-tr from-purple-900  to-blue-500 bg-clip-text">
                 Karthikeyan
               </h1>
+              {/* </div> */}
+
 
               <div className="flex flex-col">
                 <div className="h-16 w-16 bg-green-300 ">

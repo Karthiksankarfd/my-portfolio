@@ -3,6 +3,8 @@ import BadgeName from "../components/BadgeName";
 import emailjs from "@emailjs/browser";
 import mail from "../assets/mail.png";
 import linkedin from "../assets/linkedin.png";
+import insta from "../assets/insta.png";
+import git from "../assets/git.png";
 const ContactSection = () => {
   const textareaRef = useRef(null);
   const [formData, setFormdata] = useState({});
@@ -70,16 +72,17 @@ const ContactSection = () => {
   }, []);
 
   return (
-    <main className="contact_me_main_container bg-[var(--primary-bg)] py-5">
-      <section className="w-[80%] mx-auto py-5 text-white flex flex-col lg:flex-row gap-y-10  ">
+    <footer className="contact_me_main_container bg-white py-5">
+      <section className="w-[80%] mx-auto py-5  flex flex-col lg:flex-row gap-y-10  ">
         <div className="child_left text-4xl lg:text-7xl text-start flex-1 project-card ">
-          <BadgeName content="CONTACT ME HERE" color="white" />
+          <BadgeName content="CONTACT ME HERE" color="black" />
           <h1>
-            {" "}
             Let’s Turn your Ideas <br />
             into Reality
           </h1>
         </div>
+
+
         <div className="child_right flex-1 border-green-500 pl-5 border-l-4 h-fit">
           {/* <form onSubmit={sendMessage} className="flex flex-col ">
             <div className="form_field_one  w-full text-start mb-5">
@@ -142,36 +145,30 @@ const ContactSection = () => {
             />
           </form> */}
           <ul className="project-card ">
-
             <li className="mb-5 ">
-
               <a
                 className="flex flex-wrap items-center font-thin text-sm lg:text-2xl gap-5"
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=karthikeyansankar887@gmail.com&su=Hello&body=Hi%20there!"
                 target="_blank"
               >
-
-                <div className="bg-[var(--secondary-bgcolor)] lg:p-5 rounded-full">
+                <div className=" rounded-full">
                   <img
                     src={mail}
                     alt=""
                     className="aspect-square h-5 w- flex-shrink-0"
                   />
                 </div>
-
                 karthikeyansankar887@gmail.com
               </a>
-
             </li>
 
-            <li>
+            <li className="mb-5">
               <a
                 className="flex flex-wrap items-center font-thin text-sm lg:text-2xl gap-5 text-start"
                 href="https://www.linkedin.com/in/karthikeyan-sankar-360ba0259/"
                 target="_blank"
               >
-                <div className="bg-[var(--secondary-bgcolor)]  lg:p-5 rounded-full">
-
+                <div className=" rounded-full">
                   <img
                     src={linkedin}
                     alt=""
@@ -181,10 +178,45 @@ const ContactSection = () => {
                 www.linkedin.com/karthikeyan-sankar
               </a>
             </li>
+
+            <li className="mb-5">
+              <a
+                className="flex flex-wrap items-center font-thin text-sm lg:text-2xl gap-5 text-start"
+                href="https://www.linkedin.com/in/karthikeyan-sankar-360ba0259/"
+                target="_blank"
+              >
+                <div className=" rounded-full">
+                  <img
+                    src={insta}
+                    alt=""
+                    className="aspect-square h-5 w-5 flex-shrink-0"
+                  />
+                </div>
+                www.linkedin.com/karthikeyan-sankar
+              </a>
+            </li>
+
+            <li className="">
+              <a
+                className="flex flex-wrap items-center font-thin text-sm lg:text-2xl gap-5 text-start"
+                href="https://github.com/Karthiksankarfd"
+                target="_blank"
+              >
+                <div className=" rounded-full">
+                  <img
+                    src={git}
+                    alt=""
+                    className="aspect-square h-5 w-5 flex-shrink-0"
+                  />
+                </div>
+                https://github.com
+              </a>
+            </li>
           </ul>
+          
         </div>
       </section>
-    </main>
+    </footer>
   );
 };
 

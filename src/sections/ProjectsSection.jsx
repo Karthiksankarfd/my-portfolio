@@ -11,32 +11,33 @@ const ProjectsSection = () => {
     {
       name: "Real Estate Website",
       description:
-        "Awebsite for show casing the plots and apartments for an real estate agency",
-      link: "somelink",
-      image:realestate
+        "A modern real estate platform to showcase plots and apartments, helping buyers explore property listings easily.",
+      link: "https://prototyperakrealestate.netlify.app/",
+      image: realestate,
     },
     {
-      name: "E-Commerce webiste",
+      name: "E-Commerce Website",
       description:
-        "Awebsite for show casing the plots and apartments for an real estate agency",
-      link: "somelink",
-      image:ecom
+        "An interactive e-commerce platform for browsing and purchasing products with a seamless user experience.",
+      link: "https://luxury-monstera-5b2dad.netlify.app/",
+      image: ecom,
     },
     {
-      name: "Coffee Shop Themed website",
+      name: "Coffee Shop Themed Website",
       description:
-        "Awebsite for show casing the plots and apartments for an real estate agency",
-      link: "somelink",
-      image:coffee
+        "A visually appealing website designed for coffee lovers, featuring a cozy theme and an online menu.",
+      link: "https://coffeewithbrownies.netlify.app/",
+      image: coffee,
     },
     {
-      name: "student Networking Platform",
+      name: "Student Networking Platform",
       description:
-        "Awebsite for show casing the plots and apartments for an real estate agency",
+        "A platform for students to connect, collaborate, and share knowledge, fostering professional and academic growth.",
       link: "https://student-connect-client.vercel.app/",
-      image:studentconnect
+      image: studentconnect,
     },
   ];
+  
 
   return (
     // <div className=" w-full flex flex-wrap gap-5 bg-[#f8f8f8] mx-auto">
