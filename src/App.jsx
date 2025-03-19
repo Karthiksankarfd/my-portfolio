@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import ProjectCards from "./components/ProjectCards";
-import ScrollingComponent from "./components/ScrollingComponent";
 import ContactSection from "./sections/ContactSection";
 import EducationSection from "./sections/EducationSection";
 import HeroSection from "./sections/heroSection";
 import ProjectsSection from "./sections/projectsSection";
-import SkillsSection from "./sections/SkillsSection";
 import SkillsSectionTwo from "./sections/SkillsSectionTwo";
 import Footer from "./components/Footer";
 
